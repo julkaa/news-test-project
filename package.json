@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@angular/cli": "^16.0.3",
+    "bxslider": "^4.2.14"
+  }
+}

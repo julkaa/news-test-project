@@ -1,0 +1,33 @@
+<div class="form-wrapper">
+
+  <h2 class="form-header">Add News</h2>
+  <form [formGroup]="form" class="form">
+    <mat-form-field class="form__field">
+      <label>Title</label>
+      <input formControlName="titleControl" matInput>
+      <mat-error *ngIf="form.controls['titleControl'].hasError('required')">
+        Title is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field class="form__field">
+      <label>Description</label>
+      <input formControlName="descriptionControl" matInput>
+      <mat-error *ngIf="form.controls['descriptionControl'].hasError('required')">
+        Description is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field class="form__field">
+      <label>Tag</label>
+      <input formControlName="tagControl" matInput>
+      <mat-error *ngIf="form.controls['tagControl'].hasError('required')">
+        Tag is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+
+  </form>
+  <button
+    (click)="onSubmit()"
+    class="submit-btn"
+  > Save
+  </button>
+</div>

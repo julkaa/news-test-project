@@ -1,0 +1,12 @@
+<div class="content" role="main">
+  <div class="row row-container">
+    <div class="col-7">
+      <news-list [dataSource]="newsData"></news-list>
+    </div>
+    <div class="col-3">
+      <slider-block></slider-block>
+      <form-block (newsEmitter)="addNews($event)"></form-block>
+    </div>
+  </div>
+</div>
+

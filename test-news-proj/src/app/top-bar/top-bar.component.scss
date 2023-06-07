@@ -1,0 +1,43 @@
+.page-header {
+  background-color: rgba(#034971, 0.2);
+  border-radius: 8px 8px 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  
+  img {
+    margin: 0 16px;
+  }
+
+  h4 {
+    margin: 8px 0;
+  }
+
+  .spacer {
+    flex: 1;
+  }
+}
+
+.returnBtn {
+  position: relative;
+  right: 10px;
+
+  &:hover {
+    min-width: 30px;
+  }
+}
+
+
+.content {
+  display: flex;
+  margin: 82px auto 32px;
+  padding: 0 16px;
+  max-width: 90%;
+  flex-direction: column;
+  align-items: center;
+}

@@ -1,0 +1,65 @@
+$dark-blue: #034971;
+$main-blue: #b7c6cf;
+$red: #ea1b1b;
+$dark-green: #1daf34;
+
+.form-wrapper {
+  position: relative;
+  top: -20px;
+  display: grid;
+  box-shadow: 0 10px 30px -6px rgba(3, 73, 113, 0.2);
+
+  .form-header {
+    background-color: rgba($main-blue, 0.3);
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 8px 8px 0 0;
+
+    h2 {
+      margin-left: 4%;
+      margin-bottom: 0;
+      display: inline-block;
+    }
+  }
+
+  .form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+
+
+    &__field {
+      width: 100%;
+      margin-bottom: 20px;
+
+      label {
+        font-weight: 700;
+      }
+
+      mat-error {
+        color: $red;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.submit-btn {
+  font-size: 16px;
+  padding: 5px 0;
+  font-weight: bold;
+  border-radius: 64px;
+
+  border: 1px solid $dark-blue;
+  background-color: rgba(3, 73, 113, 0.1);
+
+  &:hover {
+    border: 1px solid $dark-green;
+    background-color: rgba($dark-green, 0.1);
+  }
+}
+
+
+
+
+
